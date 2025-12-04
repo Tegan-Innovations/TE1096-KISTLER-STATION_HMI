@@ -1,0 +1,883 @@
+{
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.762.46/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/Content/LoginPage1.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "Base",
+  "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [],
+      "replacesThemeForPackageComponents": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "CSS_JV/Stylesheet1.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "CSS_JV/MyRowClassesProvider.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [
+    {
+      "url": "User Control/04_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/08_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/16_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/16_Ch_Digital1280_800 - Copy.usercontrol"
+    },
+    {
+      "url": "User Control/1_Ch_Analog_INT.usercontrol"
+    },
+    {
+      "url": "User Control/2_Ch_Analog_INT.usercontrol"
+    },
+    {
+      "url": "User Control/2_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/4_Ch_Analog_INT.usercontrol"
+    },
+    {
+      "url": "User Control/4_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/8_Ch_Analog_INT.usercontrol"
+    },
+    {
+      "url": "User Control/8_Ch_Digital.usercontrol"
+    },
+    {
+      "url": "User Control/Amber_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/Background.usercontrol"
+    },
+    {
+      "url": "User Control/Blue_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/Button.usercontrol"
+    },
+    {
+      "url": "User Control/GreenAndRed_Reusable_Indicator _2Variables.usercontrol"
+    },
+    {
+      "url": "User Control/GreenAndRed_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/GreenIndicatorHome.usercontrol"
+    },
+    {
+      "url": "User Control/Green_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/Nest Animation.usercontrol"
+    },
+    {
+      "url": "User Control/Piece.usercontrol"
+    },
+    {
+      "url": "User Control/Red_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/SensorValSta.usercontrol"
+    },
+    {
+      "url": "User Control/White_Reusable_Indicator.usercontrol"
+    },
+    {
+      "url": "User Control/Yellow_Reusable_Indicator.usercontrol"
+    }
+  ],
+  "content": [
+    {
+      "url": "Content/Alarms.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Graphic/GraphicHistory.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Graphic/ForceDistanceGraphic.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_16_Box14SMAC.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_15_Box13Kistler - Copy.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_14_Term12EL7211-0010.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_13_Term11EL9576.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_07_Term5EL1918.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_06_Term4EL1918.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_05_Term3EK6910.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_09_Term7EL2904.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_08_Term6EL2904.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_10_Term8EL1809.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_12_Term10EL2809.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Settings.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Settings/SmacSetting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Settings/KilstlerSetting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Settings/Y_AxisSetiing.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Dialogs/AutoCycleFaultAcknowledge.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Dialogs/LiveDataLeakTest.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Dialogs/RejectAcknowledge.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Dialogs/ChangeProbesSetting.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Dialogs/ShutDownDialog.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Height measure/LimitsTabContent.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Height measure/SETMeasureTabContent.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Height measure/TargetTabContent.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/History.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_00OverView.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_01HMI.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_02PLC.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_03_Term1EK1100.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_04_Term2EL6070.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO Content Screen/IO_11_Term9EL1809.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/IO.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Main.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Manual.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/screw.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Statistics.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/stopper.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/System Info.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Manage Users.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Content/Menu.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "CSS_JV/MyRowClassesProvider.js"
+    }
+  ],
+  "symbols": {
+    "internal": {
+      "Screen": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "UserGroup": {
+        "value": "",
+        "type": "tchmi:general#/definitions/String",
+        "persist": false,
+        "readonly": false
+      },
+      "nIOFrameIndex": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/Integer",
+        "persist": false,
+        "readonly": false
+      },
+      "nManualFrameIndex": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "ProbesSetAcknowledge": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BIT",
+        "persist": false,
+        "readonly": false
+      },
+      "test1": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "test2": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "KistlerUpperForceLimit": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": true,
+        "readonly": false
+      },
+      "KistlerLowerForceLimit": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": true,
+        "readonly": false
+      },
+      "KistlerForceTolerance": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Reservoir_ContactPosition": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Reservoir_BottomPosition": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_HomePosition": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_Position1": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_Position2": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_Position3": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_TargetVelocity": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "Y_AXIS_RectractVelocity": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/LREAL",
+        "persist": true,
+        "readonly": false
+      },
+      "bOpenAxysSettings": {
+        "value": false,
+        "type": "tchmi:general#/definitions/BOOL",
+        "persist": false,
+        "readonly": false
+      },
+      "nSmacLinearVelocity": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacLinearAcceleration": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacLinearDistance": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacLinearTorque": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacRotativeVelocity": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacRotativeAcceleration": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "nSmacRotativeCycles": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/DINT",
+        "persist": true,
+        "readonly": false
+      },
+      "KistlerSpeed": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": false,
+        "readonly": false
+      },
+      "Reservoir_Bottomlimitoffset": {
+        "value": 0.0,
+        "type": "tchmi:general#/definitions/REAL",
+        "persist": false,
+        "readonly": false
+      }
+    },
+    "themedResources": {}
+  },
+  "trigger": [
+    {
+      "event": "%s%Diagnostics::UPTIME%/s%",
+      "actions": [
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%s%PLC1.GVL_HMI.sUserGroup%/s%",
+          "value": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%GetCurrentUser.groups%/s%"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%s%PLC1.GVL_HMI.sUserName%/s%",
+          "value": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%s%GetCurrentUser::name%/s%"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "Condition",
+          "active": true,
+          "parts": [
+            {
+              "if": [
+                {
+                  "compare1": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "symbolExpression": "%s%PLC1.GVL_HMI.bLogOut%/s%"
+                  },
+                  "compare2": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": true
+                  },
+                  "compareOperator": "==",
+                  "logic": null
+                }
+              ],
+              "then": [
+                {
+                  "objectType": "Function",
+                  "active": true,
+                  "fn": "TcHmi.Functions.Beckhoff.Logout",
+                  "fnParams": [
+                    {
+                      "objectType": "StaticValue",
+                      "valueType": "tchmi:general#/definitions/Boolean",
+                      "value": true
+                    }
+                  ],
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.GVL_HMI.bUserLogedIntSignal%/s%",
+                  "value": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "asyncWait": true
+                }
+              ]
+            },
+            {
+              "else": []
+            }
+          ],
+          "asyncWait": true
+        },
+        {
+          "objectType": "WriteToSymbol",
+          "active": true,
+          "symbolExpression": "%s%PLC1.GVL_HMI.nRegionMain%/s%",
+          "value": {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%Screen|BindingMode=TwoWay%/i%"
+          },
+          "asyncWait": true
+        },
+        {
+          "objectType": "Condition",
+          "active": true,
+          "parts": [
+            {
+              "if": [
+                {
+                  "compare1": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "symbolExpression": "%s%PLC1.S_Master_SMAC.fbSmacCycleMan.bSetValues%/s%"
+                  },
+                  "compare2": {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/BOOL",
+                    "value": false
+                  },
+                  "compareOperator": "==",
+                  "logic": null
+                }
+              ],
+              "then": [
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nLinearVel%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacLinearVelocity%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nLinearAcc%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacLinearAcceleration%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nLinearSetPoint%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacLinearDistance%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nLinearTorque%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacLinearTorque%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nRotativeVel%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacRotativeVelocity%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.S_Master_SMAC.I_O_fbSmacCycleMan.nRotativeAcc%/s%",
+                  "value": {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%i%nSmacRotativeAcceleration%/i%"
+                  },
+                  "asyncWait": true
+                },
+                {
+                  "objectType": "WriteToSymbol",
+                  "active": true,
+                  "symbolExpression": "%s%PLC1.GVL_PERSISTENT.nSmacRotativeSetPoint%/s%",
+                  "value": {
+                    "objectType": "FunctionExpression",
+                    "functionExpression": "%f%%f%%f%%f%%f%%f%%f%%f%%f%%i%nSmacRotativeCycles%/i%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%"
+                  },
+                  "asyncWait": true
+                }
+              ]
+            },
+            {
+              "else": []
+            }
+          ],
+          "asyncWait": true
+        }
+      ]
+    }
+  ],
+  "actionTemplates": [],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 800,
+      "defaultHeight": 600
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ],
+  "systemKeyboard": {
+    "providerName": "Beckhoff.TcHmiKeyboard",
+    "projectKeyboardMapping": {
+      "de": {
+        "text": "KeyboardLayouts/German - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      },
+      "en": {
+        "text": "KeyboardLayouts/US - compact.keyboard.json",
+        "decimal": "KeyboardLayouts/Numpad (plusminus).keyboard.json",
+        "numeric": ""
+      }
+    }
+  },
+  "systemPopups": {
+    "providerName": "Beckhoff.TcHmiPopups"
+  }
+}

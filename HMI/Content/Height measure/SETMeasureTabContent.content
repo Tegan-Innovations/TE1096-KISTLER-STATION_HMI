@@ -1,0 +1,65 @@
+<div id="TargetTabContent_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="358" data-tchmi-height="249" data-tchmi-creator-viewport-width="800" data-tchmi-creator-viewport-height="600">
+<div id="TcHmiTextblock_9139" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="43" data-tchmi-left-unit="px" data-tchmi-text="SET" data-tchmi-top="59" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiButton_57" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="43" data-tchmi-left-unit="px" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="118" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_57.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Dialog::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Content/Dialogs/ChangeProbesSetting.content"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Dialog::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiTextblock_9140" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="188" data-tchmi-left-unit="px" data-tchmi-text="Measure" data-tchmi-top="59" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+</div>
+<div id="TcHmiButton_58" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="188" data-tchmi-left-unit="px" data-tchmi-top="121" data-tchmi-top-unit="px" data-tchmi-width="118" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiButton_58.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.GVL_HMI_GLOBAL.bManualMeasureHeightTest%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

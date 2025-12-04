@@ -1,0 +1,843 @@
+<div id="Nest_Animation" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="700" data-tchmi-height="500" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-zindex="3">
+<div id="nest" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="709" data-tchmi-height-unit="px" data-tchmi-left="124" data-tchmi-left-unit="px" data-tchmi-src="Images/nest.png" data-tchmi-top="157" data-tchmi-top-unit="px" data-tchmi-width="419" data-tchmi-width-unit="px" data-tchmi-zindex="45" data-tchmi-visibility="Visible" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="True">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%NestVisibility%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%NestVisibility%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiImage_63::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmi_Controls_Beckhoff_TcHmiImage_63::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Hidden"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="part1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="164" data-tchmi-left-unit="px" data-tchmi-src="Images/part1.png" data-tchmi-top="380" data-tchmi-top-unit="px" data-tchmi-width="51" data-tchmi-width-unit="px" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%Part1%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%Part1%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%part1::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%part1::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="part2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="163" data-tchmi-left-unit="px" data-tchmi-src="Images/part2.png" data-tchmi-top="401" data-tchmi-top-unit="px" data-tchmi-width="51" data-tchmi-width-unit="px" data-tchmi-zindex="35" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%part2%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%part2%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%part2::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%part2::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%part2_movement%/pp%",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%part2::Top%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%part2_movement%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ggripper1_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="74" data-tchmi-height-unit="px" data-tchmi-left="155" data-tchmi-left-unit="px" data-tchmi-src="Images/gripper1_1.png" data-tchmi-top="360" data-tchmi-top-unit="px" data-tchmi-width="34" data-tchmi-width-unit="px" data-tchmi-zindex="28" data-tchmi-creator-locked="True" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%gripper1_1%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%gripper1_1%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper1_1', '')",
+                  "animation.addKeyframe('transform', 'translate(-25px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(0px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper1_1');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 0,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper1_1', '')",
+                  "animation.addKeyframe('transform', 'translate(0px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(-25px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper1_1');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": -25        \t,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0        \t,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ggripper1_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="74" data-tchmi-height-unit="px" data-tchmi-left="187" data-tchmi-left-unit="px" data-tchmi-src="Images/gripper1_2.png" data-tchmi-top="364" data-tchmi-top-unit="px" data-tchmi-width="34" data-tchmi-width-unit="px" data-tchmi-zindex="34" data-tchmi-creator-locked="True" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%gripper1_2%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%gripper1_2%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper1_2', '')",
+                  "animation.addKeyframe('transform', 'translate(25px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(0px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper1_2');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 0,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper1_2', '')",
+                  "animation.addKeyframe('transform', 'translate(0px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(25px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper1_2');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 25,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ggripper2_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="168" data-tchmi-height-unit="px" data-tchmi-left="118" data-tchmi-left-unit="px" data-tchmi-src="Images/gripper2_1.png" data-tchmi-top="364" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-creator-locked="True" data-tchmi-zindex="10" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%gripper2_1%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%gripper2_1%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper2_1', '')",
+                  "animation.addKeyframe('transform', 'translate(-25px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(0px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper2_1');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 0,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper2_1', '')",
+                  "animation.addKeyframe('transform', 'translate(0px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(-25px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper2_1');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": -25        \t,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ggripper2_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="170" data-tchmi-height-unit="px" data-tchmi-left="194" data-tchmi-left-unit="px" data-tchmi-src="Images/gripper2_2.png" data-tchmi-top="363" data-tchmi-top-unit="px" data-tchmi-width="65" data-tchmi-width-unit="px" data-tchmi-creator-locked="True" data-tchmi-zindex="11" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%gripper2_2%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%gripper2_2%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper2_2', '')",
+                  "animation.addKeyframe('transform', 'translate(25px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(0px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper2_2');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 0,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "var animation = new TcHmi.Animation('ggripper2_2', '')",
+                  "animation.addKeyframe('transform', 'translate(0px, 0px)', 0)",
+                  "    .addKeyframe('transform', 'translate(25px, 0px)', 1)",
+                  "    .duration(1000);",
+                  "    ",
+                  "animation.registerEventHandler('animationend', function (event) {",
+                  "    console.log('Animation ended: ' + event.animationName);",
+                  "    var someControl = TcHmi.Controls.get('ggripper2_2');",
+                  "    var t = [{",
+                  "        \"transformType\": \"Translate\",",
+                  "        \"x\": 25,",
+                  "        \"xUnit\": \"px\",",
+                  "        \"y\": 0,",
+                  "        \"yUnit\": \"px\",",
+                  "        \"z\": 0,",
+                  "        \"zUnit\": \"px\",",
+                  "    }",
+                  "    ];",
+                  " someControl.setTransform(t);",
+                  "});",
+                  "",
+                  "",
+                  "animation.run();"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Bottle_Part" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="80" data-tchmi-height-unit="px" data-tchmi-left="432" data-tchmi-left-unit="px" data-tchmi-src="Images/bottle.png" data-tchmi-top="398" data-tchmi-top-unit="px" data-tchmi-width="50" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="True" data-tchmi-zindex="44">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%bottle_part%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%pp%bottle_part%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Bottle_Part::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Bottle_Part::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="motor1_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="556" data-tchmi-height-unit="px" data-tchmi-left="353" data-tchmi-left-unit="px" data-tchmi-src="Images/motor1_2.png" data-tchmi-top="-76" data-tchmi-top-unit="px" data-tchmi-width="252" data-tchmi-width-unit="px" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="39">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%motor1_1_movement%/pp%",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%motor1_2::Top%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%motor1_1_movement%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+</div>
+<div id="motor2_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="685" data-tchmi-height-unit="px" data-tchmi-left="59" data-tchmi-left-unit="px" data-tchmi-src="Images/motor2_1.png" data-tchmi-top="15" data-tchmi-top-unit="px" data-tchmi-width="269" data-tchmi-width-unit="px" data-tchmi-zindex="40" data-tchmi-creator-visibility="Visible">
+</div>
+<div id="safety_sensor1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="123" data-tchmi-height-unit="px" data-tchmi-left="97" data-tchmi-left-unit="px" data-tchmi-src="Images/Safety_Sensor1.png" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-zindex="42" data-tchmi-creator-visibility="Visible">
+</div>
+<div id="safety_sensor2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="123" data-tchmi-height-unit="px" data-tchmi-left="502" data-tchmi-left-unit="px" data-tchmi-src="Images/Safety_sensor2.png" data-tchmi-top="245" data-tchmi-top-unit="px" data-tchmi-width="80" data-tchmi-width-unit="px" data-tchmi-zindex="43" data-tchmi-creator-visibility="Visible">
+</div>
+<div id="safety_sensors_signal" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiRectangle" data-tchmi-height="8" data-tchmi-height-unit="px" data-tchmi-left="162" data-tchmi-left-unit="px" data-tchmi-top="320" data-tchmi-top-unit="px" data-tchmi-width="350" data-tchmi-width-unit="px" data-tchmi-zindex="41" data-tchmi-opacity="1" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+{
+  "angle": 236.0,
+  "stopPoints": [
+    {
+      "color": "rgba(248, 0, 0, 0.2745098)",
+      "stop": "50%"
+    },
+    {
+      "color": "rgba(255, 255, 255, 0.2745098)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%safety_sensor_signal%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%safety_sensor_signal%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%safety_sensors_signal::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Visible"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%safety_sensors_signal::Visibility%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Visibility",
+                  "value": "Collapsed"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="motor2_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="556" data-tchmi-height-unit="px" data-tchmi-left="50" data-tchmi-left-unit="px" data-tchmi-src="Images/mmotor2_2.png" data-tchmi-top="-31" data-tchmi-top-unit="px" data-tchmi-width="269" data-tchmi-width-unit="px" data-tchmi-zindex="37" data-tchmi-creator-visibility="Visible">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%motor2_2_movement%/pp%",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%motor2_2::Top%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%pp%motor2_2_movement%/pp%"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+
+
+</div>

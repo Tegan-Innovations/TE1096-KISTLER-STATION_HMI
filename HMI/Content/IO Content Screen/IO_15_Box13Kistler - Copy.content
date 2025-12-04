@@ -1,0 +1,250 @@
+<div id="IO_03EK1100_5" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1280" data-tchmi-height="465">
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_71" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="335" data-tchmi-height-unit="px" data-tchmi-left="151" data-tchmi-left-unit="px" data-tchmi-src="Images/IndraDrive.png" data-tchmi-top="51" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_72" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="456" data-tchmi-height-unit="px" data-tchmi-left="320" data-tchmi-left-unit="px" data-tchmi-src="Images/safety zone.png" data-tchmi-top="-70" data-tchmi-top-unit="px" data-tchmi-width="309" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_73" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="600" data-tchmi-height-unit="px" data-tchmi-left="255" data-tchmi-left-unit="px" data-tchmi-src="Images/kistler maxymos.png" data-tchmi-top="114" data-tchmi-top-unit="px" data-tchmi-width="400" data-tchmi-width-unit="px">
+</div>
+<div id="TcHmiTextblock_9249" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="844" data-tchmi-left-unit="px" data-tchmi-text="Ready" data-tchmi-top="52" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3230" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="793" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="59" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bReady%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+
+
+</div>
+<div id="TcHmiTextblock_9250" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-text="Servo Warning" data-tchmi-top="111" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3231" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="794" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="118" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bServoWarn%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+</div>
+<div id="TcHmiTextblock_9251" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-text="Servo Error" data-tchmi-top="171" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3232" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="794" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="178" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bServoError%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+</div>
+<div id="TcHmiTextblock_9252" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="844" data-tchmi-left-unit="px" data-tchmi-text="SMES or STO Fault" data-tchmi-top="231" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3233" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="793" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="238" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bSMES_Or_STO%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+</div>
+<div id="TcHmiTextblock_9253" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-text="General Warning" data-tchmi-top="290" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3234" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="794" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="297" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bWarning%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+</div>
+<div id="TcHmiTextblock_9254" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="45" data-tchmi-height-unit="px" data-tchmi-left="845" data-tchmi-left-unit="px" data-tchmi-text="General Alarm" data-tchmi-top="350" data-tchmi-top-unit="px" data-tchmi-width="217" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="25">
+</div>
+<div id="GreenIndicator_3235" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="33" data-tchmi-height-unit="px" data-tchmi-left="794" data-tchmi-left-unit="px" data-tchmi-nheight="30" data-tchmi-nwidth="30" data-tchmi-target-user-control="User Control/Green_Reusable_Indicator.usercontrol" data-tchmi-top="357" data-tchmi-top-unit="px" data-tchmi-width="30" data-tchmi-width-unit="px" data-tchmi-zindex="118" data-tchmi-variable="%s%PLC1.K_Master_Kistler.stReceived.bAlarm%/s%">
+<script data-tchmi-target-attribute="data-tchmi-strokecol" type="application/json">
+{
+  "color": "rgba(220, 226, 218, 1)"
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-on_col" type="application/json">
+{
+  "angle": 40.0,
+  "stopPoints": [
+    {
+      "color": "rgba(90, 224, 27, 1)",
+      "stop": "60.45%"
+    },
+    {
+      "color": "rgba(220, 226, 218, 1)",
+      "stop": "100%"
+    }
+  ]
+}
+</script>
+<script data-tchmi-target-attribute="data-tchmi-off_col" type="application/json">
+{
+  "color": "rgba(90, 224, 27, 0.3921568)"
+}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-value" type="application/json">
+true
+</script>
+</div>
+</div>

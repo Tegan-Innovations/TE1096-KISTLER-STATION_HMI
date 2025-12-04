@@ -1,0 +1,107 @@
+<div id="Manual_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1280" data-tchmi-height="506" data-tchmi-creator-viewport-width="800" data-tchmi-creator-viewport-height="600">
+<div id="TcHmiCombobox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-combobox-text="Select" data-tchmi-height="41" data-tchmi-height-unit="px" data-tchmi-left="19" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="1235" data-tchmi-width-unit="px" data-tchmi-selected-index="%s%PLC1.GVL_HMI.nRegionSetting|BindingMode=TwoWay%/s%" data-tchmi-src-data="%s%PLC1.GVL_HMI.aSettingScreens%/s%" data-tchmi-text-font-size="20" data-tchmi-drop-down-font-size="20" data-tchmi-data-height="40">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmiCombobox_2.onSelectionChanged",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/DINT",
+          "symbolExpression": "%s%PLC1.GVL_HMI.nRegionSetting%/s%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 0
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ContentPath",
+                  "value": "Content/Settings/KilstlerSetting.content"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ContentPath",
+                  "value": "Content/Settings/SmacSetting.content"
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%Settings_Region::TargetContent%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ContentPath",
+                  "value": "Content/Settings/Y_AxisSetiing.content"
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Settings_Region" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="465" data-tchmi-height-unit="px" data-tchmi-left="-0" data-tchmi-left-unit="px" data-tchmi-top="41" data-tchmi-top-unit="px" data-tchmi-width="1280" data-tchmi-width-unit="px">
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%ctrl%Settings_Region::CurrentContent%/ctrl%",
+    "actions": []
+  }
+]
+</script>
+</div>
+</div>

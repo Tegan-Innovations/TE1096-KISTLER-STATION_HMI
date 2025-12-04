@@ -1,0 +1,10 @@
+{
+    "CERTIFICATEEXPIRATION": "P14000D",
+    "REQUIREAUTH": 2,
+    "VIRTUALDIRECTORIES": {
+        "/": "www",
+        "/Beckhoff.TwinCAT.HMI.Controls": "..\\..\\..\\..\\hmi\\HMI\\Packages\\Beckhoff.TwinCAT.HMI.Controls.12.762.46\\runtimes\\native1.12-tchmi",
+        "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\..\\..\\hmi\\HMI\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.762.46\\runtimes\\native1.12-tchmi",
+        "/framework": "..\\..\\..\\..\\hmi\\HMI\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.762.46\\runtimes\\native1.12-tchmi"
+    }
+}

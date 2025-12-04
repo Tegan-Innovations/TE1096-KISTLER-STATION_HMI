@@ -1,0 +1,236 @@
+<div id="Content1_6" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1280" data-tchmi-height="499" data-tchmi-creator-viewport-width="800" data-tchmi-creator-viewport-height="600">
+<div id="TcHmiLineChart_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLineChart" data-tchmi-height="369" data-tchmi-height-unit="px" data-tchmi-left="28" data-tchmi-left-unit="px" data-tchmi-top="23" data-tchmi-top-unit="px" data-tchmi-width="1149" data-tchmi-width-unit="px" data-tchmi-x-axis-name="X DIstance (mm)" data-tchmi-x-axis-unit="" data-tchmi-x-main-tick-max-value="40" data-tchmi-x-main-tick-min-value="0" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-show-x-axis-name="true" data-tchmi-line-graph-data="%s%PLC1.GVL_HMI.GraphDataHistory%/s%">
+<script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">
+[
+  {
+    "id": 1,
+    "showAxis": true,
+    "position": "Left",
+    "logarithmicScale": false,
+    "axisLabeling": "Number",
+    "showLabels": true,
+    "mainTickMinValue": 0.0,
+    "mainTickMaxValue": 50.0,
+    "showAxisName": true,
+    "axisName": "Y Force (N)",
+    "axisNameFontSize": 15,
+    "axisNameFontSizeUnit": "px",
+    "axisNameFontWeight": "Bold",
+    "decimalPlaces": 2,
+    "autoScaling": false,
+    "unit": "",
+    "labelFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisLabelFontColor%/tr%",
+    "axisColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisAxisColor%/tr%",
+    "axisNameFontColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisAxisNameFontColor%/tr%"
+  }
+]
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-line-graph-descriptions" type="application/json">
+[
+  {
+    "yAxisId": 1,
+    "lineWidth": 2,
+    "pointDot": false,
+    "pointDotRadius": 3,
+    "pointDotStrokeWidth": 1,
+    "fillTransparency": 50.0,
+    "lineColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionLineColor%/tr%",
+    "pointDotFillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotFillColor%/tr%",
+    "pointDotStrokeColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotStrokeColor%/tr%",
+    "fillColor": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionFillColor%/tr%"
+  }
+]
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_87" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="74" data-tchmi-height-unit="px" data-tchmi-left="1187" data-tchmi-left-unit="px" data-tchmi-src="Images/up-arrow.png" data-tchmi-top="23" data-tchmi-top-unit="px" data-tchmi-width="84" data-tchmi-width-unit="px">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmi_Controls_Beckhoff_TcHmiImage_87.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.A_HMI.bSumSID%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmi_Controls_Beckhoff_TcHmiImage_88" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="69" data-tchmi-height-unit="px" data-tchmi-left="1187" data-tchmi-left-unit="px" data-tchmi-src="Images/down-arrow.png" data-tchmi-top="328" data-tchmi-top-unit="px" data-tchmi-width="81" data-tchmi-width-unit="px" data-tchmi-zindex="1">
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "TcHmi_Controls_Beckhoff_TcHmiImage_88.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.A_HMI.bSubSID%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="TcHmiDatagrid_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiDatagrid" data-tchmi-height="85" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="407" data-tchmi-top-unit="px" data-tchmi-width="1250" data-tchmi-width-unit="px" data-tchmi-grid-font-size="20" data-tchmi-grid-font-style="Normal" data-tchmi-grid-font-weight="Bold" data-tchmi-src-data="%s%PLC1.A_HMI.stProccessReportLogKils%/s%">
+<script data-tchmi-target-attribute="data-tchmi-cell-content-padding" type="application/json">
+{
+  "left": 3,
+  "leftUnit": "px",
+  "right": 3,
+  "rightUnit": "px",
+  "top": 0,
+  "topUnit": "px",
+  "bottom": 0,
+  "bottomUnit": "px"
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-src-column" type="application/json">
+[
+  {
+    "name": "sKis_Result",
+    "label": "RESULT",
+    "control": "TextBox",
+    "width": 200,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "textColor": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "rKis_HighestRecordedForce",
+    "label": "FORCE",
+    "control": "TextBox",
+    "width": 200,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "rKis_DistanceRecord",
+    "label": "DISTANCE",
+    "control": "TextBox",
+    "width": 200,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "editable": false,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "sTime",
+    "label": "TIME",
+    "control": "TextBox",
+    "width": 300,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "textColor": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "editable": false,
+    "horizontalAlignment": "Center",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  },
+  {
+    "name": "sDate",
+    "label": "DATE",
+    "control": "TextBox",
+    "width": 300,
+    "widthUnit": "px",
+    "resize": false,
+    "sortable": false,
+    "minWidth": 100,
+    "minWidthUnit": "px",
+    "textColor": {
+      "color": "rgba(0, 0, 0, 1)"
+    },
+    "editable": false,
+    "horizontalAlignment": "Left",
+    "verticalAlignment": "Center",
+    "headerHorizontalAlignment": "Center",
+    "headerVerticalAlignment": "Center",
+    "ignoreEscapeSequences": false,
+    "autoFocusOut": true,
+    "autoSelectText": false
+  }
+]
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-row-classes-provider" type="application/json">
+{
+  "objectType": "Function",
+  "active": true,
+  "fn": "TcHmi.Functions.LeakTestersHMI.MyRowClassesProvider",
+  "fnParams": []
+}
+</script>
+</div>
+</div>

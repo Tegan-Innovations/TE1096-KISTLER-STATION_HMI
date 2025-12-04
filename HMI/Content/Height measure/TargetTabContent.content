@@ -1,0 +1,339 @@
+<div id="TargetTabContent_3" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="358" data-tchmi-height="249" data-tchmi-creator-viewport-width="800" data-tchmi-creator-viewport-height="600">
+
+<div id="TcHmiTextblock_9013" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="42" data-tchmi-height-unit="px" data-tchmi-left="173" data-tchmi-left-unit="px" data-tchmi-text="+/- Tolerance (µm):" data-tchmi-top="-8" data-tchmi-top-unit="px" data-tchmi-width="151" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+</div>
+<div id="TolValue_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="false" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="191" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="false" data-tchmi-top="32" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aTolerancesHeightTest[0]|BindingMode=TwoWay%/s%" data-tchmi-zindex="1" data-tchmi-max-value="5000" data-tchmi-min-value="0">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+
+</div>
+<div id="TolValue_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="191" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aTolerancesHeightTest[1]|BindingMode=TwoWay%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+
+</div>
+<div id="TolValue_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="191" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="147" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aTolerancesHeightTest[2]|BindingMode=TwoWay%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+
+</div>
+<div id="TolValue_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="193" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="207" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aTolerancesHeightTest[3]|BindingMode=TwoWay%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+
+</div>
+<div id="TcHmiTextblock_9014" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="53" data-tchmi-left-unit="px" data-tchmi-text="SetPoint" data-tchmi-top="-8" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-font-size="18" data-tchmi-zindex="9">
+</div>
+<div id="ValueLimitMin_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="63" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="27" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-is-enabled="false" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aSensorSetPointsHeightTest[0]%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ValueLimitMin_5.onFocusIn",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%ValueLimitMin_1%/ctrl%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ValueLimitMin_5.onFocusOut",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/String",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ValueLimitMin_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="63" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="87" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-is-enabled="false" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aSensorSetPointsHeightTest[1]%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ValueLimitMin_6.onFocusIn",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%ValueLimitMin_1%/ctrl%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ValueLimitMin_6.onFocusOut",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/String",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ValueLimitMin_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="63" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="147" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-is-enabled="false" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aSensorSetPointsHeightTest[2]%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ValueLimitMin_7.onFocusIn",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%ValueLimitMin_1%/ctrl%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ValueLimitMin_7.onFocusOut",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/String",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="ValueLimitMin_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left="63" data-tchmi-left-unit="px" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="207" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-is-enabled="false" data-tchmi-value-horizontal-alignment="Center" data-tchmi-zero-padding="0" data-tchmi-value-font-size="20" data-tchmi-value="%s%PLC1.GVL_PERSIST.aSensorSetPointsHeightTest[3]%/s%" data-tchmi-zindex="1">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "ValueLimitMin_8.onFocusIn",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%ctrl%ValueLimitMin_1%/ctrl%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ValueLimitMin_8.onFocusOut",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::FixedTarget%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/String",
+          "value": null
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%numPad::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

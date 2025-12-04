@@ -1,0 +1,5 @@
+<div id="IO_08_Term6EL2904" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="1280" data-tchmi-height="465">
+
+<div id="UserControl1_84" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-el_state="%s%PLC1.GVL_IO.nEL2904_1State%/s%" data-tchmi-el_statetext="%s%PLC1.GVL_IO.sEL2904_2Status%/s%" data-tchmi-height="465" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="User Control/04_Ch_Digital.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="1210" data-tchmi-width-unit="px" data-tchmi-ch1_text="Pilz 1 Coil" data-tchmi-ch2_text="Indra Drive E-Stop" data-tchmi-ch3_text="Pilz 2 E-Stop" data-tchmi-ch4_text="Door Interlock CMD" data-tchmi-el_image="Images/IO Beckhoff/EL2904.png" data-tchmi-ch1="%s%PLC1.GVL_IO.qPilz1_Coil%/s%" data-tchmi-ch2="%s%PLC1.GVL_IO.qIndraDrive_EStop%/s%" data-tchmi-ch3="%s%PLC1.GVL_IO.qPilz2_EStop%/s%" data-tchmi-ch4="%s%PLC1.GVL_IO.qDoorInterlock_CMD%/s%">
+</div>
+</div>
