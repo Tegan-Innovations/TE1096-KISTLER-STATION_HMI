@@ -709,7 +709,7 @@
     ]
   },
   {
-    "event": "%s%PLC1.GVL_HMI_GLOBAL.bRejectPieceAcknowledge%/s%",
+    "event": "%s%PLC1.GVL_HMI.bPieceReject%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -721,7 +721,7 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/BOOL",
-                  "symbolExpression": "%s%PLC1.GVL_HMI_GLOBAL.bRejectPieceAcknowledge%/s%"
+                  "symbolExpression": "%s%PLC1.GVL_HMI.bPieceReject%/s%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -740,7 +740,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ContentPath",
-                  "value": "Content/Dialogs/Blank.content"
+                  "value": "Content/Dialogs/RejectAcknowledge.content"
                 },
                 "asyncWait": true
               },
@@ -751,7 +751,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Visibility",
-                  "value": "Collapsed"
+                  "value": "Visible"
                 },
                 "asyncWait": true
               }

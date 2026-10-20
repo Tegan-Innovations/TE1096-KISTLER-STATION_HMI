@@ -97,20 +97,35 @@
     "event": "TcHmiButton_60.onPressed",
     "actions": [
       {
-        "objectType": "ControlApiFunction",
+        "objectType": "WriteToSymbol",
         "active": true,
-        "control": "PopUp",
-        "fn": "close",
+        "symbolExpression": "%s%PLC1.GVL_HMI.bPieceReject%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": false
+        },
         "asyncWait": true
       },
       {
         "objectType": "WriteToSymbol",
         "active": true,
-        "symbolExpression": "%s%PLC1.GVL_HMI_GLOBAL.bRejectPieceAcknowledge%/s%",
+        "symbolExpression": "%ctrl%Dialog::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:general#/definitions/BOOL",
-          "value": true
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Dialog::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": null
         },
         "asyncWait": true
       }

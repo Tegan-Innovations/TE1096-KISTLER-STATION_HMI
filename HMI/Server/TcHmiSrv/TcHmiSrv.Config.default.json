@@ -5717,6 +5717,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.GVL_HMI.bPieceReject": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::GVL_HMI::bPieceReject",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.GVL_HMI.bQuitHmi": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -10437,6 +10447,7 @@
                 "PLC1.GVL_HMI.bManualModeOff": 3,
                 "PLC1.GVL_HMI.bManualModeOff.1": 3,
                 "PLC1.GVL_HMI.bMoveToPos": 3,
+                "PLC1.GVL_HMI.bPieceReject": 3,
                 "PLC1.GVL_HMI.bQuitHmi": 3,
                 "PLC1.GVL_HMI.bResetKistlerBadParts": 3,
                 "PLC1.GVL_HMI.bResetKistlerGoodParts": 3,
